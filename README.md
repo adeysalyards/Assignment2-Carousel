@@ -20,6 +20,7 @@ Sign In
 [OPTIONAL] Create a Dropbox
   * [x] Animation when keyboard appears
   * [x] Tapping checkbox selects the checkbox
+  * [x] Terms and Condition button loads a webview
   * [x] User is taken to tutorial screen after
 
 Tutorial
