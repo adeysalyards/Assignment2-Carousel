@@ -39,6 +39,7 @@ Conversations
 Settings
   * [x] User can dismiss settings screen
   * [x] User can log out
+  * [ ] [OPT] Alert view on log out
 
 [OPTIONAL] Learn more about Carousel
   * [ ] "Learn more about Carousel" in photo timeline
