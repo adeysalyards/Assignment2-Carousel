@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0C390A61BED707500F76BAF /* ImageTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C390A51BED707500F76BAF /* ImageTimelineViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A0C390A81BED74CF00F76BAF /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C390A71BED74CF00F76BAF /* ConversationsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A0C390AA1BED759800F76BAF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C390A91BED759800F76BAF /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A0C390AC1BED96DF00F76BAF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C390AB1BED96DF00F76BAF /* CreateAccountViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A0C390AE1BEDA1E400F76BAF /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C390AD1BEDA1E400F76BAF /* TermsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A0C390B01BEDA33900F76BAF /* Terms2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C390AF1BEDA33900F76BAF /* Terms2ViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A0DA36651BE875A600859ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA36641BE875A600859ECA /* AppDelegate.swift */; };
 		A0DA36671BE875A600859ECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA36661BE875A600859ECA /* ViewController.swift */; };
 		A0DA366A1BE875A600859ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DA36681BE875A600859ECA /* Main.storyboard */; };
@@ -37,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0C390A51BED707500F76BAF /* ImageTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTimelineViewController.swift; sourceTree = "<group>"; };
+		A0C390A71BED74CF00F76BAF /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		A0C390A91BED759800F76BAF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A0C390AB1BED96DF00F76BAF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		A0C390AD1BEDA1E400F76BAF /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		A0C390AF1BEDA33900F76BAF /* Terms2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terms2ViewController.swift; sourceTree = "<group>"; };
 		A0DA36611BE875A600859ECA /* Assignment2-Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment2-Carousel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DA36641BE875A600859ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0DA36661BE875A600859ECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,8 +95,8 @@
 		A0DA36581BE875A500859ECA = {
 			isa = PBXGroup;
 			children = (
+				A0C390AD1BEDA1E400F76BAF /* TermsViewController.swift */,
 				A0DA36631BE875A600859ECA /* Assignment2-Carousel */,
-				A0DA36781BE875A600859ECA /* Assignment2-CarouselTests */,
 				A0DA36831BE875A600859ECA /* Assignment2-CarouselUITests */,
 				A0DA36621BE875A600859ECA /* Products */,
 			);
@@ -106,12 +118,18 @@
 				A0DA36641BE875A600859ECA /* AppDelegate.swift */,
 				A0DA36661BE875A600859ECA /* ViewController.swift */,
 				A0DA36681BE875A600859ECA /* Main.storyboard */,
+				A0C390AF1BEDA33900F76BAF /* Terms2ViewController.swift */,
+				A0C390AB1BED96DF00F76BAF /* CreateAccountViewController.swift */,
+				A0C390A91BED759800F76BAF /* SettingsViewController.swift */,
+				A0C390A71BED74CF00F76BAF /* ConversationsViewController.swift */,
+				A0C390A51BED707500F76BAF /* ImageTimelineViewController.swift */,
 				A0F3E11C1BE9CFB3004C4AF5 /* SignInViewController.swift */,
 				A0F3E11A1BE9CD97004C4AF5 /* IntroViewController.swift */,
 				A0DA366B1BE875A600859ECA /* Assets.xcassets */,
 				A0DA366D1BE875A600859ECA /* LaunchScreen.storyboard */,
 				A0F3E11E1BE9D16B004C4AF5 /* Common.swift */,
 				A0DA36701BE875A600859ECA /* Info.plist */,
+				A0DA36781BE875A600859ECA /* Assignment2-CarouselTests */,
 			);
 			path = "Assignment2-Carousel";
 			sourceTree = "<group>";
@@ -123,7 +141,7 @@
 				A0DA367B1BE875A600859ECA /* Info.plist */,
 			);
 			path = "Assignment2-CarouselTests";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		A0DA36831BE875A600859ECA /* Assignment2-CarouselUITests */ = {
 			isa = PBXGroup;
@@ -269,9 +287,15 @@
 			files = (
 				A0F3E11D1BE9CFB3004C4AF5 /* SignInViewController.swift in Sources */,
 				A0F3E11B1BE9CD97004C4AF5 /* IntroViewController.swift in Sources */,
+				A0C390A81BED74CF00F76BAF /* ConversationsViewController.swift in Sources */,
 				A0DA36671BE875A600859ECA /* ViewController.swift in Sources */,
+				A0C390AE1BEDA1E400F76BAF /* TermsViewController.swift in Sources */,
+				A0C390A61BED707500F76BAF /* ImageTimelineViewController.swift in Sources */,
+				A0C390B01BEDA33900F76BAF /* Terms2ViewController.swift in Sources */,
 				A0F3E11F1BE9D16B004C4AF5 /* Common.swift in Sources */,
+				A0C390AC1BED96DF00F76BAF /* CreateAccountViewController.swift in Sources */,
 				A0DA36651BE875A600859ECA /* AppDelegate.swift in Sources */,
+				A0C390AA1BED759800F76BAF /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,28 +8,89 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loadingActivityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var signInScrollView: UIScrollView!
+    @IBOutlet weak var buttonParentView: UIView!
+    @IBOutlet weak var fieldParentView: UIView!
+    @IBOutlet weak var loginNavBar: UIImageView!
+    
+    var initialY: CGFloat!
+    var offset: CGFloat!
+    var textFieldInitialY: CGFloat!
+    var textFieldOffset: CGFloat!
+    var contentOffset: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        initialY = buttonParentView.frame.origin.y
+        offset = -250
+        textFieldInitialY = fieldParentView.frame.origin.y
+        textFieldOffset = -90
+        contentOffset = 30
+        
+        signInScrollView.delegate = self
+            
+        signInScrollView.contentSize = CGSize(width: 320, height: 600)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        let transform = CGAffineTransformMakeScale(0.9, 0.9)
+        loginNavBar.transform = transform
+        fieldParentView.transform = transform
+        loginNavBar.alpha = 0
+        fieldParentView.alpha = 0
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.3) { () -> Void in
+            self.fieldParentView.transform = CGAffineTransformIdentity
+            self.loginNavBar.transform = CGAffineTransformIdentity
+            self.fieldParentView.alpha = 1
+            self.loginNavBar.alpha = 1
+        }
     }
 
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
     }
     
+    @IBAction func didPressBack(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
     @IBAction func didTapSignInButton(sender: AnyObject) {
         self.validateCredentials()
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func scrollViewDidScroll(signInScrollView: UIScrollView) {
+        if signInScrollView.contentOffset.y <= -50 {
+            view.endEditing(true)
+        }
+    }
+    
+    func keyboardWillShow(notification: NSNotification!) {
+        fieldParentView.frame.origin.y = textFieldInitialY + textFieldOffset
+        buttonParentView.frame.origin.y = initialY + offset
+    }
+    
+    func keyboardWillHide(notification: NSNotification!) {
+        fieldParentView.frame.origin.y = textFieldInitialY  
+        buttonParentView.frame.origin.y = initialY
     }
         
         func validateCredentials() {
@@ -45,7 +106,6 @@ class SignInViewController: UIViewController {
                 let emptyAlert = UIAlertController(title: "Missing something?", message: "Try that one again.", preferredStyle: UIAlertControllerStyle.Alert)
                 
                 let okAction = UIAlertAction(title: "Got it", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
-                    print("User tapped got it")
                 })
                 
                 emptyAlert.addAction(okAction)
