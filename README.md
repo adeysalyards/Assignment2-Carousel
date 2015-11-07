@@ -3,7 +3,7 @@
 Monday night: 3 hours |
 Tuesday night: 3 hours |
 Thursday night: 3 hours |
-Friday night: 3 hours |
+Friday night: 5 hours |
 Saturday: TBD
 
 Initial Screen
@@ -14,13 +14,13 @@ Sign In
   * [x] Empty fields? Error alert
   * [x] Incorrect info? Delay, then error alert
   * [x] Correct info? Delay, then next screen
-  * [ ] [OPT] Dismiss keyboard on swipe
-  * [ ] [OPT] On appear, scale and fade the screen
+  * [x] [OPT] Dismiss keyboard on swipe
+  * [x] [OPT] On appear, scale and fade the screen
 
 [OPTIONAL] Create a Dropbox
-  * [ ] Animation when keyboard appears
-  * [ ] Tapping checkbox selects the checkbox
-  * [ ] User is taken to tutorial screen after
+  * [x] Animation when keyboard appears
+  * [x] Tapping checkbox selects the checkbox
+  * [x] User is taken to tutorial screen after
 
 Tutorial
   * [x] User can page between the screens
