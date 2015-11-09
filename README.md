@@ -45,8 +45,8 @@ Settings
 [OPTIONAL] Learn more about Carousel
   * [x] "Learn more about Carousel" in photo timeline
   * [x] Tap X to dismiss the banner
-  * [ ] Track 3 events: view a photo full screen, swipe left and right, share a photo
-  * [ ] Upon completion of the events, mark them green
-  * [ ] When all events are completed, dismiss the banner
+  * [x] Used NSUserDefaults to pass data from one screen to another, for viewing a full screen image
+
 
 ![alt tag] (https://github.com/adeysalyards/Assignment2-Carousel/blob/master/Walkthrough_v3.gif)
+![alt tag] (https://github.com/adeysalyards/Assignment2-Carousel/blob/master/Bonus.gif)
