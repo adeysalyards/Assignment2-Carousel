@@ -15,7 +15,7 @@ class PhotoDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        defaults.setObject("photoDetail", forKey: "PhotoDetailKey")
+        defaults.setBool(true, forKey: "viewed_fullscreen")
         defaults.synchronize()
 
         // Do any additional setup after loading the view.

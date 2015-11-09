@@ -18,6 +18,10 @@ class GetStartedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        if defaults.boolForKey("viewed_fullscreen") {
+            didPressCheckBoxButton()
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -26,7 +30,7 @@ class GetStartedViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
-    @IBAction func didPressCheckBoxButton(sender: AnyObject) {
+    @IBAction func didPressCheckBoxButton() {
         checkBox.selected = !checkBox.selected
     }
     
