@@ -12,13 +12,37 @@ class ImageTimelineViewController: UIViewController {
 
     @IBOutlet weak var feedScrollView: UIScrollView!
     @IBOutlet weak var feedImage: UIImageView!
+    @IBOutlet weak var learnMoreBannerView: UIImageView!
+    
+    var bannerInitialX: CGFloat!
+    var bannerOffset: CGFloat!
+    var scrollInitialY: CGFloat!
+    var scrollOffset: CGFloat!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bannerInitialX = learnMoreBannerView.frame.origin.x
+        bannerOffset = -320
+        
+        scrollInitialY = feedScrollView.frame.origin.y
+        scrollOffset = -40
+        
         feedScrollView.contentSize = feedImage.image!.size
 
     }
+    
+    @IBAction func didPressX(sender: AnyObject) {
+        learnMoreBannerView.frame.origin.x = bannerInitialX + bannerOffset
+        feedScrollView.frame.origin.y = scrollInitialY + scrollOffset
+    }
+    
+    /*func didPressX(notification: NSNotification!) {
+        learnMoreBannerView.frame.origin.y = bannerInitialY + bannerOffset
+        feedScrollView.frame.origin.y = scrollInitialY + scrollOffset
+    }*/
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

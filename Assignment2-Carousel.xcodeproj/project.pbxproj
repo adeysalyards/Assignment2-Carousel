@@ -13,6 +13,8 @@
 		A0C390AC1BED96DF00F76BAF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C390AB1BED96DF00F76BAF /* CreateAccountViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A0C390AE1BEDA1E400F76BAF /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C390AD1BEDA1E400F76BAF /* TermsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A0C390B01BEDA33900F76BAF /* Terms2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C390AF1BEDA33900F76BAF /* Terms2ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A0C390B21BEFDCC500F76BAF /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C390B11BEFDCC500F76BAF /* GetStartedViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A0C390B41BEFE5DF00F76BAF /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C390B31BEFE5DF00F76BAF /* PhotoDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A0DA36651BE875A600859ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA36641BE875A600859ECA /* AppDelegate.swift */; };
 		A0DA36671BE875A600859ECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA36661BE875A600859ECA /* ViewController.swift */; };
 		A0DA366A1BE875A600859ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DA36681BE875A600859ECA /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		A0C390AB1BED96DF00F76BAF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A0C390AD1BEDA1E400F76BAF /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		A0C390AF1BEDA33900F76BAF /* Terms2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terms2ViewController.swift; sourceTree = "<group>"; };
+		A0C390B11BEFDCC500F76BAF /* GetStartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		A0C390B31BEFE5DF00F76BAF /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		A0DA36611BE875A600859ECA /* Assignment2-Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment2-Carousel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DA36641BE875A600859ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0DA36661BE875A600859ECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				A0DA36641BE875A600859ECA /* AppDelegate.swift */,
 				A0DA36661BE875A600859ECA /* ViewController.swift */,
 				A0DA36681BE875A600859ECA /* Main.storyboard */,
+				A0C390B31BEFE5DF00F76BAF /* PhotoDetailViewController.swift */,
+				A0C390B11BEFDCC500F76BAF /* GetStartedViewController.swift */,
 				A0C390AF1BEDA33900F76BAF /* Terms2ViewController.swift */,
 				A0C390AB1BED96DF00F76BAF /* CreateAccountViewController.swift */,
 				A0C390A91BED759800F76BAF /* SettingsViewController.swift */,
@@ -288,7 +294,9 @@
 				A0F3E11D1BE9CFB3004C4AF5 /* SignInViewController.swift in Sources */,
 				A0F3E11B1BE9CD97004C4AF5 /* IntroViewController.swift in Sources */,
 				A0C390A81BED74CF00F76BAF /* ConversationsViewController.swift in Sources */,
+				A0C390B21BEFDCC500F76BAF /* GetStartedViewController.swift in Sources */,
 				A0DA36671BE875A600859ECA /* ViewController.swift in Sources */,
+				A0C390B41BEFE5DF00F76BAF /* PhotoDetailViewController.swift in Sources */,
 				A0C390AE1BEDA1E400F76BAF /* TermsViewController.swift in Sources */,
 				A0C390A61BED707500F76BAF /* ImageTimelineViewController.swift in Sources */,
 				A0C390B01BEDA33900F76BAF /* Terms2ViewController.swift in Sources */,

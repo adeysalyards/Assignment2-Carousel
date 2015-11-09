@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UIAlertViewDelegate {
 
     @IBOutlet weak var settingsImage: UIImageView!
     @IBOutlet weak var settingsScrollView: UIScrollView!
@@ -22,7 +22,30 @@ class SettingsViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    func didSignOutControl (){
+        let alertController = UIAlertController(title:nil, message: "Are you sure you want to log out?", preferredStyle: .ActionSheet)
+        
+        let logoutAction = UIAlertAction(title: "Log Out", style: UIAlertActionStyle.Destructive, handler: {
+            (UIAlertAction) -> Void in
+            self.performSegueWithIdentifier("signOutSegue", sender:nil)
+        })
+        
+        let okAction = UIAlertAction (title: "Cancel", style: UIAlertActionStyle.Cancel) { (UIAlertAction) -> Void in
+        }
+        
+        alertController.addAction(okAction)
+        alertController.addAction(logoutAction)
+        
+        presentViewController(alertController, animated: true) { () -> Void in
+        }
 
+    }
+
+    @IBAction func didPressSignOut(sender: AnyObject) {
+        didSignOutControl()
+    }
+    
     @IBAction func didPressX(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }

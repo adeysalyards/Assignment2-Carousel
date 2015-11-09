@@ -1,37 +1,33 @@
 //
-//  Terms2ViewController.swift
+//  PhotoDetailViewController.swift
 //  Assignment2-Carousel
 //
-//  Created by Salyards, Adey on 11/6/15.
+//  Created by Salyards, Adey on 11/8/15.
 //  Copyright © 2015 Salyards, Adey. All rights reserved.
 //
 
 import UIKit
 
-class Terms2ViewController: UIViewController {
+class PhotoDetailViewController: UIViewController {
+    
+    var defaults = NSUserDefaults.standardUserDefaults()
 
-    @IBOutlet weak var termsWebView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = "https://www.dropbox.com/terms?mobile=1"
-        
-        let requestURL = NSURL(string:url)
-        // Place the URL in a URL Request.
-        let request = NSURLRequest(URL: requestURL!)
-        // Load Request into WebView.
-        termsWebView.loadRequest(request)
+        defaults.setObject("photoDetail", forKey: "PhotoDetailKey")
+        defaults.synchronize()
 
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func didpressDone(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func didPressBack(sender: AnyObject) {
+    dismissViewControllerAnimated(true, completion: nil)
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        
     }
     
 

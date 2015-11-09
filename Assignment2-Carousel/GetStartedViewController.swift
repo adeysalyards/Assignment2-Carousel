@@ -1,37 +1,44 @@
 //
-//  Terms2ViewController.swift
+//  GetStartedViewController.swift
 //  Assignment2-Carousel
 //
-//  Created by Salyards, Adey on 11/6/15.
+//  Created by Salyards, Adey on 11/8/15.
 //  Copyright © 2015 Salyards, Adey. All rights reserved.
 //
 
 import UIKit
 
-class Terms2ViewController: UIViewController {
+class GetStartedViewController: UIViewController {
 
-    @IBOutlet weak var termsWebView: UIWebView!
+    @IBOutlet weak var checkBox: UIButton!
+    @IBOutlet weak var checkBox2: UIButton!
+    @IBOutlet weak var checkBox3: UIButton!
+    
+    var defaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let url = "https://www.dropbox.com/terms?mobile=1"
-        
-        let requestURL = NSURL(string:url)
-        // Place the URL in a URL Request.
-        let request = NSURLRequest(URL: requestURL!)
-        // Load Request into WebView.
-        termsWebView.loadRequest(request)
 
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func didpressDone(sender: AnyObject) {
+    @IBAction func didPressX(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+
+    @IBAction func didPressCheckBoxButton(sender: AnyObject) {
+        checkBox.selected = !checkBox.selected
+    }
+    
+
+    @IBAction func didPressCheckBoxButton2(sender: AnyObject) {
+        checkBox2.selected = !checkBox2.selected
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        
     }
     
 
