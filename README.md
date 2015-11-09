@@ -4,7 +4,8 @@ Monday night: 3 hours |
 Tuesday night: 3 hours |
 Thursday night: 3 hours |
 Friday night: 5 hours |
-Saturday: TBD
+Saturday: 4 hours |
+Sunday: 3 hours
 
 Initial Screen
   * [x] [OPT] Photo tiles move with scrolling
