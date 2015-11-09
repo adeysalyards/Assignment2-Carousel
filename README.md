@@ -39,13 +39,13 @@ Conversations
 Settings
   * [x] User can dismiss settings screen
   * [x] User can log out
-  * [ ] [OPT] Alert view on log out
+  * [x] [OPT] Alert view on log out
 
 [OPTIONAL] Learn more about Carousel
-  * [ ] "Learn more about Carousel" in photo timeline
-  * [ ] Tap X to dismiss the banner
+  * [x] "Learn more about Carousel" in photo timeline
+  * [x] Tap X to dismiss the banner
   * [ ] Track 3 events: view a photo full screen, swipe left and right, share a photo
   * [ ] Upon completion of the events, mark them green
   * [ ] When all events are completed, dismiss the banner
 
-![alt tag] (https://github.com/adeysalyards/Assignment2-Carousel/blob/master/Walkthrough_v2.gif)
+![alt tag] (https://github.com/adeysalyards/Assignment2-Carousel/blob/master/Walkthrough_v3.gif)
